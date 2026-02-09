@@ -120,7 +120,10 @@ class ModalManager {
     this.closeButton = document.querySelector('.modal__close');
     
     if (!this.modal) return;
-    
+    // store original modal body so we can restore/reset it on close
+    const modalBodyEl = this.modal.querySelector('.modal__body');
+    this.originalBodyHTML = modalBodyEl ? modalBodyEl.innerHTML : null;
+
     this.init();
   }
 
@@ -211,6 +214,33 @@ class ModalManager {
       if (window.mobileCtaBarInstance) {
         window.mobileCtaBarInstance.handleScroll();
       }
+    }
+
+    // Reset modal body to original (clears any success message or remaining errors)
+    try {
+      const modalBody = this.modal.querySelector('.modal__body');
+      if (modalBody && this.originalBodyHTML !== null) {
+        modalBody.innerHTML = this.originalBodyHTML;
+
+        // If a form exists, reset it and clear any validation UI
+        const form = modalBody.querySelector('form');
+        if (form) {
+          form.reset();
+
+          // remove error classes/messages added by ImprovedFormValidation
+          const errorFields = form.querySelectorAll('.error');
+          errorFields.forEach(field => {
+            field.classList.remove('error');
+            field.style.borderColor = '';
+            field.removeAttribute('aria-invalid');
+            const err = field.parentElement.querySelector('.error-message');
+            if (err) err.remove();
+          });
+        }
+      }
+    } catch (err) {
+      // silently ignore DOM issues
+      console.warn('Could not reset modal body:', err);
     }
   }
 }
