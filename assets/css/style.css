@@ -2209,9 +2209,10 @@ a:hover {
 }
 
 .skip-link {
+  /* keep skip link available for keyboard users but hidden visually */
   position: absolute;
-  top: -40px;
-  left: 0;
+  left: -9999px;
+  top: 0;
   background: var(--color-primary-dark);
   color: white;
   padding: 8px 16px;
@@ -2219,13 +2220,17 @@ a:hover {
   z-index: 10000;
   border-radius: 0 0 4px 0;
   font-weight: 600;
-  transition: top var(--transition-fast);
+  transition: none;
 }
 
-.skip-link:focus {
+.skip-link:focus,
+.skip-link:focus-visible {
+  /* reveal when focused via keyboard */
+  left: 0;
   top: 0;
   outline: 3px solid var(--color-accent-coral);
   outline-offset: 2px;
+  transition: none;
 }
 
 *:focus-visible {
