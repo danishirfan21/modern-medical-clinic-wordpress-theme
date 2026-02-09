@@ -1,0 +1,211 @@
+<?php
+/**
+ * Template Name: About Page
+ */
+get_header(); ?>
+
+  <!-- Hero with Team Photo -->
+  <section class="hero" style="min-height: 50vh; background-image: linear-gradient(135deg, rgba(0, 107, 125, 0.85), rgba(0, 107, 125, 0.7)), url('https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1600&q=80');">
+    <div class="hero__container">
+      <div class="hero__content" style="text-align: center; max-width: 800px; margin: 0 auto;">
+        <h1 class="hero__headline" style="font-size: 3rem;">Healthcare That Puts You First</h1>
+        <p class="hero__subheadline" style="font-size: 1.25rem;">
+          Since 2010, we've been building a medical practice focused on what matters most: you.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story -->
+  <section class="section">
+    <div class="container container--narrow">
+      <h2 class="text-center fade-in" style="margin-bottom: 3rem;">Our Story</h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-badge">2010</div>
+          <h3 class="timeline-title">Founded by Dr. Sarah Martinez</h3>
+          <p class="timeline-text">
+            After years of working in large hospital systems, Dr. Martinez had a vision: a medical practice where doctors have time to actually listen to patients. She opened Modern Medical Clinic with a simple mission—bring compassion back to healthcare.
+          </p>
+        </div>
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-badge">2015</div>
+          <h3 class="timeline-title">Expanded to 4 Doctors</h3>
+          <p class="timeline-text">
+            As word spread about our patient-centered approach, demand grew. We welcomed Dr. Chen, Dr. Park, and Dr. Wilson to the team, each bringing unique specialties and a shared commitment to quality care.
+          </p>
+        </div>
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-badge">2020</div>
+          <h3 class="timeline-title">Launched Telehealth During Pandemic</h3>
+          <p class="timeline-text">
+            When COVID-19 hit, we rapidly implemented secure telehealth services to ensure our patients could access care safely from home. Today, telehealth remains a core part of how we serve busy families.
+          </p>
+        </div>
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-badge timeline-badge--current">2025</div>
+          <h3 class="timeline-title">Serving 5,000+ Active Patients</h3>
+          <p class="timeline-text">
+            We've grown to serve over 5,000 active patients across all life stages. We've expanded our services, upgraded our facilities, and maintained the same core value: your health, your way.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Values -->
+  <section class="section section--sage">
+    <div class="container">
+      <h2 class="text-center fade-in" style="margin-bottom: 3rem;">Our Mission & Values</h2>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+
+        <div class="fade-in" style="background-color: white; padding: 2rem; border-radius: var(--radius-lg); text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">👂</div>
+          <h3 style="color: var(--color-primary-dark); margin-bottom: 1rem;">Listen First</h3>
+          <p style="color: var(--color-text-secondary); line-height: 1.7;">
+            We spend time understanding you—not just your symptoms, but your life, your concerns, and your goals. You deserve to be heard.
+          </p>
+        </div>
+
+        <div class="fade-in" style="background-color: white; padding: 2rem; border-radius: var(--radius-lg); text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🔬</div>
+          <h3 style="color: var(--color-primary-dark); margin-bottom: 1rem;">Evidence-Based</h3>
+          <p style="color: var(--color-text-secondary); line-height: 1.7;">
+            Modern medicine backed by proven science. We stay current with research and use treatments that actually work.
+          </p>
+        </div>
+
+        <div class="fade-in" style="background-color: white; padding: 2rem; border-radius: var(--radius-lg); text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🤝</div>
+          <h3 style="color: var(--color-primary-dark); margin-bottom: 1rem;">Accessible</h3>
+          <p style="color: var(--color-text-secondary); line-height: 1.7;">
+            Same-day appointments, evening hours, weekend availability, and telehealth. Healthcare on your schedule, not ours.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards & Recognition -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center fade-in" style="margin-bottom: 3rem;">Awards & Recognition</h2>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+
+        <div class="fade-in" style="text-align: center; padding: 1.5rem; border: 2px solid var(--color-border); border-radius: var(--radius-lg); transition: all 0.3s ease;">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">🏆</div>
+          <h3 style="font-size: 1.125rem; color: var(--color-primary-dark); margin-bottom: 0.5rem;">Best Family Practice</h3>
+          <p style="color: var(--color-text-secondary);">City Magazine 2023, 2024</p>
+        </div>
+
+        <div class="fade-in" style="text-align: center; padding: 1.5rem; border: 2px solid var(--color-border); border-radius: var(--radius-lg); transition: all 0.3s ease;">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">⭐</div>
+          <h3 style="font-size: 1.125rem; color: var(--color-primary-dark); margin-bottom: 0.5rem;">Top-Rated on Google</h3>
+          <p style="color: var(--color-text-secondary);">4.9★ from 420+ reviews</p>
+        </div>
+
+        <div class="fade-in" style="text-align: center; padding: 1.5rem; border: 2px solid var(--color-border); border-radius: var(--radius-lg); transition: all 0.3s ease;">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">✓</div>
+          <h3 style="font-size: 1.125rem; color: var(--color-primary-dark); margin-bottom: 0.5rem;">PCMH Certified</h3>
+          <p style="color: var(--color-text-secondary);">Patient-Centered Medical Home</p>
+        </div>
+
+        <div class="fade-in" style="text-align: center; padding: 1.5rem; border: 2px solid var(--color-border); border-radius: var(--radius-lg); transition: all 0.3s ease;">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">💙</div>
+          <h3 style="font-size: 1.125rem; color: var(--color-primary-dark); margin-bottom: 0.5rem;">Community Health Award</h3>
+          <p style="color: var(--color-text-secondary);">State Health Department 2022</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Involvement -->
+  <section class="section section--alt">
+    <div class="container">
+      <h2 class="text-center fade-in" style="margin-bottom: 1.5rem;">Community Involvement</h2>
+      <p class="text-center fade-in" style="max-width: 700px; margin: 0 auto 3rem; font-size: 1.125rem; color: var(--color-text-secondary);">
+        We believe healthcare extends beyond our clinic walls. Our team regularly participates in community health initiatives.
+      </p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+
+        <div class="fade-in" style="background-color: white; padding: 1.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+          <h3 style="color: var(--color-primary-dark); margin-bottom: 0.75rem; font-size: 1.125rem;">Free Health Fair</h3>
+          <p style="color: var(--color-text-secondary); font-size: 0.9375rem;">
+            Annual community health screenings with free blood pressure checks, glucose testing, and health education.
+          </p>
+        </div>
+
+        <div class="fade-in" style="background-color: white; padding: 1.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+          <h3 style="color: var(--color-primary-dark); margin-bottom: 0.75rem; font-size: 1.125rem;">School Vaccination Drives</h3>
+          <p style="color: var(--color-text-secondary); font-size: 0.9375rem;">
+            Partnering with local schools to provide immunizations and sports physicals at reduced cost.
+          </p>
+        </div>
+
+        <div class="fade-in" style="background-color: white; padding: 1.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+          <h3 style="color: var(--color-primary-dark); margin-bottom: 0.75rem; font-size: 1.125rem;">Charity 5K Run</h3>
+          <p style="color: var(--color-text-secondary); font-size: 0.9375rem;">
+            Our team participates in and sponsors the annual Heart Health 5K, raising funds for cardiac research.
+          </p>
+        </div>
+
+        <div class="fade-in" style="background-color: white; padding: 1.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+          <h3 style="color: var(--color-primary-dark); margin-bottom: 0.75rem; font-size: 1.125rem;">Health Education Workshops</h3>
+          <p style="color: var(--color-text-secondary); font-size: 0.9375rem;">
+            Monthly free workshops on nutrition, diabetes management, stress reduction, and preventive care.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center fade-in" style="margin-bottom: 3rem;">By the Numbers</h2>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+        <div class="fade-in text-center">
+          <div style="font-size: 3.5rem; font-weight: 700; color: var(--color-primary-dark); margin-bottom: 0.5rem;">5,000+</div>
+          <p style="color: var(--color-text-secondary); font-weight: 600;">Active Patients</p>
+        </div>
+        <div class="fade-in text-center">
+          <div style="font-size: 3.5rem; font-weight: 700; color: var(--color-primary-dark); margin-bottom: 0.5rem;">4</div>
+          <p style="color: var(--color-text-secondary); font-weight: 600;">Board-Certified Doctors</p>
+        </div>
+        <div class="fade-in text-center">
+          <div style="font-size: 3.5rem; font-weight: 700; color: var(--color-primary-dark); margin-bottom: 0.5rem;">15</div>
+          <p style="color: var(--color-text-secondary); font-weight: 600;">Years in Business</p>
+        </div>
+        <div class="fade-in text-center">
+          <div style="font-size: 3.5rem; font-weight: 700; color: var(--color-primary-dark); margin-bottom: 0.5rem;">4.9★</div>
+          <p style="color: var(--color-text-secondary); font-weight: 600;">Average Patient Rating</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section section--sage">
+    <div class="container text-center">
+      <h2 class="fade-in" style="margin-bottom: 1rem;">Become Part of Our Family</h2>
+      <p class="fade-in" style="font-size: 1.125rem; color: var(--color-text-secondary); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+        We're accepting new patients and would love to be your healthcare partner.
+      </p>
+      <a href="#" class="btn btn--primary btn--large fade-in" data-modal="booking">Book Your First Appointment</a>
+    </div>
+  </section>
+
+<?php get_footer(); ?>
