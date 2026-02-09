@@ -1,0 +1,298 @@
+<?php
+/**
+ * Template Name: Contact Page
+ */
+get_header(); ?>
+
+  <section class="hero" style="min-height: 40vh;">
+    <div class="hero__container">
+      <div class="hero__content" style="max-width: 700px;">
+        <h1 class="hero__headline" style="font-size: 3rem;">Get in Touch</h1>
+        <p class="hero__subheadline">
+          Book online, call us, or stop by. We're here to help with all your healthcare needs.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact-form">
+    <div class="container">
+      <div class="contact-form__container">
+
+        <!-- Left Column: Appointment Form -->
+        <div class="form fade-in">
+          <h2 class="form__heading">Book Your Appointment</h2>
+          <form id="appointmentForm">
+
+            <div class="form__row">
+              <div class="form__group">
+                <label for="firstName" class="form__label">First Name *</label>
+                <input type="text" id="firstName" name="firstName" class="form__input" required>
+              </div>
+              <div class="form__group">
+                <label for="lastName" class="form__label">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" class="form__input" required>
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label for="email" class="form__label">Email Address *</label>
+              <input type="email" id="email" name="email" class="form__input" required placeholder="your.email@example.com">
+            </div>
+
+            <div class="form__group">
+              <label for="phone" class="form__label">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" class="form__input" required placeholder="(555) 123-4567">
+            </div>
+
+            <div class="form__row">
+              <div class="form__group">
+                <label for="date" class="form__label">Preferred Date *</label>
+                <input type="date" id="date" name="date" class="form__input" required>
+              </div>
+              <div class="form__group">
+                <label for="time" class="form__label">Preferred Time *</label>
+                <select id="time" name="time" class="form__select" required>
+                  <option value="">Select time</option>
+                  <option value="morning">Morning (8am-12pm)</option>
+                  <option value="afternoon">Afternoon (12pm-5pm)</option>
+                  <option value="evening">Evening (5pm-7pm)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label for="reason" class="form__label">Reason for Visit *</label>
+              <select id="reason" name="reason" class="form__select" required>
+                <option value="">Select reason</option>
+                <option value="new-patient">New Patient Visit</option>
+                <option value="follow-up">Follow-up Visit</option>
+                <option value="urgent">Urgent Care</option>
+                <option value="preventive">Preventive/Wellness</option>
+                <option value="physical">Physical Exam</option>
+                <option value="telehealth">Telehealth Appointment</option>
+              </select>
+            </div>
+
+            <div class="form__group">
+              <label for="doctor" class="form__label">Preferred Doctor (Optional)</label>
+              <select id="doctor" name="doctor" class="form__select">
+                <option value="">No preference</option>
+                <option value="martinez">Dr. Sarah Martinez (Family Medicine)</option>
+                <option value="chen">Dr. Michael Chen (Internal Medicine)</option>
+                <option value="park">Dr. Emily Park (Pediatrics)</option>
+                <option value="wilson">Dr. James Wilson (Family Medicine)</option>
+              </select>
+            </div>
+
+            <div class="form__group">
+              <label for="insurance" class="form__label">Insurance Provider (Optional)</label>
+              <input type="text" id="insurance" name="insurance" class="form__input" placeholder="e.g., Blue Cross, Aetna, UnitedHealthcare">
+            </div>
+
+            <div class="form__group">
+              <label for="notes" class="form__label">Additional Notes (Optional)</label>
+              <textarea id="notes" name="notes" class="form__textarea" placeholder="Any symptoms, concerns, or special requests..."></textarea>
+            </div>
+
+            <p class="form__helper">
+              We'll confirm your appointment within 2 hours during business hours, or the next morning if submitted after 5pm.
+            </p>
+
+            <button type="submit" class="btn btn--primary btn--block btn--large">
+              Submit Appointment Request
+            </button>
+
+          </form>
+        </div>
+
+        <!-- Right Column: Contact Info -->
+        <div class="contact-info fade-in">
+          <h2 class="contact-info__heading">Contact Information</h2>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon">📍</div>
+            <div class="contact-info__text">
+              <strong>Address</strong><br>
+              123 Maple Street, Suite 200<br>
+              Cityville, ST 12345
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon">📞</div>
+            <div class="contact-info__text">
+              <strong>Phone</strong><br>
+              <a href="tel:5551234567" class="contact-info__link">(555) 123-4567</a>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon">📠</div>
+            <div class="contact-info__text">
+              <strong>Fax</strong><br>
+              (555) 123-4568
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon">✉️</div>
+            <div class="contact-info__text">
+              <strong>Email</strong><br>
+              <a href="mailto:hello@modernmedicalclinic.com" class="contact-info__link">hello@modernmedicalclinic.com</a>
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem;">
+            <h3 style="font-size: 1.125rem; margin-bottom: 1rem; color: var(--color-text-primary);">Office Hours</h3>
+            <table class="hours-table">
+              <tbody>
+                <tr>
+                  <td>Monday - Friday</td>
+                  <td>8:00am - 7:00pm</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>9:00am - 3:00pm</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>Closed</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="emergency-banner">
+            ⚠️ If you have a medical emergency, call 911 or go to the nearest ER.
+          </div>
+
+          <div style="margin-top: 2rem;">
+            <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem; color: var(--color-text-primary);">Parking & Directions</h3>
+            <p style="color: var(--color-text-secondary); font-size: 0.9375rem; line-height: 1.6;">
+              Free parking available in rear lot. Entrance on Maple Street. Our office is wheelchair accessible with elevator access to Suite 200.
+            </p>
+          </div>
+
+          <!-- Map -->
+          <div style="margin-top: 2rem;">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3356.139426679474!2d-117.16519892346943!3d32.73515897366896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d954b7e8a1b535%3A0x3b5e3f3e3f3e3f3e!2sMaple%20St%2C%20San%20Diego%2C%20CA%2092103!5e0!3m2!1sen!2sus!4v1733167890123!5m2!1sen!2sus"
+              width="100%"
+              height="300"
+              style="border: 0; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Modern Medical Clinic Location - San Diego">
+            </iframe>
+            <div style="margin-top: 1rem; text-align: center;">
+              <a href="https://www.google.com/maps/dir//Maple+St,+San+Diego,+CA+92103" target="_blank" rel="noopener" style="color: var(--color-primary-main); font-weight: 600; text-decoration: none; font-size: 0.9375rem;">
+                🗺️ Get Directions →
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section section--alt">
+    <div class="container container--narrow">
+      <h2 class="text-center fade-in" style="margin-bottom: 3rem;">Frequently Asked Questions</h2>
+
+      <div class="fade-in" style="margin-bottom: 2rem; padding: 1.5rem; background-color: white; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+        <h3 style="color: var(--color-primary-dark); margin-bottom: 0.75rem; font-size: 1.125rem;">How do I schedule an appointment?</h3>
+        <p style="color: var(--color-text-secondary); line-height: 1.7;">
+          You can book online using the form above, call us at (555) 123-4567, or use our patient portal. We typically respond to online requests within 2 hours during business hours.
+        </p>
+      </div>
+
+      <div class="fade-in" style="margin-bottom: 2rem; padding: 1.5rem; background-color: white; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+        <h3 style="color: var(--color-primary-dark); margin-bottom: 0.75rem; font-size: 1.125rem;">Do you accept walk-ins?</h3>
+        <p style="color: var(--color-text-secondary); line-height: 1.7;">
+          While we prefer scheduled appointments to minimize wait times, we do accept walk-ins for urgent matters based on availability. Call ahead to check same-day openings.
+        </p>
+      </div>
+
+      <div class="fade-in" style="margin-bottom: 2rem; padding: 1.5rem; background-color: white; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+        <h3 style="color: var(--color-primary-dark); margin-bottom: 0.75rem; font-size: 1.125rem;">What insurance do you accept?</h3>
+        <p style="color: var(--color-text-secondary); line-height: 1.7;">
+          We accept most major insurance plans including Aetna, Blue Cross Blue Shield, UnitedHealthcare, Cigna, Medicare, and many others. Contact us to verify your specific plan.
+        </p>
+      </div>
+
+      <div class="fade-in" style="margin-bottom: 2rem; padding: 1.5rem; background-color: white; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+        <h3 style="color: var(--color-primary-dark); margin-bottom: 0.75rem; font-size: 1.125rem;">What should I bring to my first appointment?</h3>
+        <p style="color: var(--color-text-secondary); line-height: 1.7;">
+          Please bring a photo ID, insurance card, list of current medications, and any relevant medical records. New patient forms can be filled out online in advance to save time.
+        </p>
+      </div>
+
+      <div class="fade-in" style="margin-bottom: 2rem; padding: 1.5rem; background-color: white; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+        <h3 style="color: var(--color-primary-dark); margin-bottom: 0.75rem; font-size: 1.125rem;">How do I access telehealth visits?</h3>
+        <p style="color: var(--color-text-secondary); line-height: 1.7;">
+          Book a telehealth appointment the same way as in-person visits (online or by phone). You'll receive a secure video link via email before your appointment. All you need is a device with a camera and internet connection.
+        </p>
+      </div>
+
+      <div class="fade-in" style="margin-bottom: 2rem; padding: 1.5rem; background-color: white; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+        <h3 style="color: var(--color-primary-dark); margin-bottom: 0.75rem; font-size: 1.125rem;">What is your cancellation policy?</h3>
+        <p style="color: var(--color-text-secondary); line-height: 1.7;">
+          Please provide at least 24 hours notice if you need to cancel or reschedule. You can do this through the patient portal, by phone, or by email. This helps us serve other patients who need appointments.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section section--sage">
+    <div class="container text-center">
+      <h2 class="fade-in" style="margin-bottom: 1rem;">Prefer to Talk to Someone?</h2>
+      <p class="fade-in" style="font-size: 1.125rem; color: var(--color-text-secondary); margin-bottom: 2rem;">
+        Our friendly staff is available Monday through Friday, 8am-7pm.
+      </p>
+      <a href="tel:5551234567" class="btn btn--primary btn--large fade-in">
+        📞 Call (555) 123-4567
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact Form Handler (Move to a JS file or keep here if specific) -->
+  <script>
+    const appointmentForm = document.getElementById('appointmentForm');
+    if (appointmentForm) {
+      appointmentForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(appointmentForm);
+        const data = Object.fromEntries(formData);
+
+        console.log('Appointment submitted:', data);
+
+        // Show success message
+        appointmentForm.innerHTML = `
+          <div style="text-align: center; padding: 3rem 1rem;">
+            <div style="font-size: 5rem; color: var(--color-accent-sage); margin-bottom: 1rem;">✓</div>
+            <h3 style="color: var(--color-primary-dark); margin-bottom: 1rem; font-size: 2rem;">Request Received!</h3>
+            <p style="color: var(--color-text-secondary); margin-bottom: 2rem; font-size: 1.125rem; line-height: 1.6;">
+              Thank you for choosing Modern Medical Clinic. We'll confirm your appointment within 2 hours during business hours.
+              <br><br>
+              You'll receive a confirmation email at <strong>${data.email}</strong>.
+            </p>
+            <button class="btn btn--primary" onclick="location.reload()">Book Another Appointment</button>
+          </div>
+        `;
+
+        // Scroll to success message
+        appointmentForm.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+    }
+  </script>
+
+<?php get_footer(); ?>

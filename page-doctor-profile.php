@@ -1,0 +1,296 @@
+<?php
+/**
+ * Template Name: Doctor Profile Page
+ */
+get_header(); ?>
+
+  <!-- Doctor Profile Hero -->
+  <section class="doctor-hero">
+    <div class="doctor-hero__gradient"></div>
+    <div class="container">
+      <div class="doctor-hero__content fade-in">
+        <div class="doctor-hero__image-wrapper">
+          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800&h=800&fit=crop"
+               alt="Dr. Sarah Martinez"
+               class="doctor-hero__image">
+          <div class="doctor-hero__status-badge">
+            <span class="status-indicator"></span>
+            Accepting Patients
+          </div>
+        </div>
+
+        <div class="doctor-hero__info">
+          <h1 class="doctor-hero__name">Dr. Sarah Martinez, MD</h1>
+          <p class="doctor-hero__specialty">Board-Certified Family Medicine Physician</p>
+
+          <div class="doctor-hero__badges">
+            <span class="trust-badge">
+              <span class="trust-badge__icon">✓</span>
+              <span class="trust-badge__text">Board Certified</span>
+            </span>
+            <span class="trust-badge">
+              <span class="trust-badge__icon">🎓</span>
+              <span class="trust-badge__text">15+ Years</span>
+            </span>
+            <span class="trust-badge">
+              <span class="trust-badge__icon">💬</span>
+              <span class="trust-badge__text">English, Spanish</span>
+            </span>
+            <span class="trust-badge trust-badge--rating">
+              <span class="trust-badge__icon">⭐</span>
+              <span class="trust-badge__text">4.9 Rating</span>
+            </span>
+          </div>
+
+          <p class="doctor-hero__bio">
+            Compassionate family medicine specialist dedicated to providing comprehensive, patient-centered care for all ages. Known for taking time to listen and creating personalized treatment plans.
+          </p>
+
+          <div class="doctor-hero__ctas">
+            <a href="#" class="btn btn--primary btn--large" data-modal="booking">
+              📅 Book Appointment
+            </a>
+            <a href="tel:5551234567" class="btn btn--secondary btn--large">
+              📞 Call (555) 123-4567
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Info Cards -->
+  <section class="doctor-quick-info">
+    <div class="container">
+      <div class="doctor-info-grid fade-in">
+        <div class="info-card">
+          <div class="info-card__icon">🎓</div>
+          <h3 class="info-card__title">Education</h3>
+          <p class="info-card__text">Stanford Medical School<br>UCLA Residency</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card__icon">🏥</div>
+          <h3 class="info-card__title">Experience</h3>
+          <p class="info-card__text">15+ Years<br>5,000+ Patients Treated</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card__icon">💼</div>
+          <h3 class="info-card__title">Specialties</h3>
+          <p class="info-card__text">Family Care, Women's Health<br>Chronic Disease Management</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card__icon">🌍</div>
+          <h3 class="info-card__title">Languages</h3>
+          <p class="info-card__text">English (Native)<br>Spanish (Fluent)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="doctor-profile">
+    <div class="container">
+
+      <!-- Tabs Navigation -->
+      <div class="doctor-profile__tabs fade-in" style="margin-top: 3rem;">
+        <button class="tab-button active" data-tab="about">About</button>
+        <button class="tab-button" data-tab="education">Education & Training</button>
+        <button class="tab-button" data-tab="specialties">Specialties</button>
+        <button class="tab-button" data-tab="reviews">Patient Reviews</button>
+      </div>
+
+      <!-- Tab Content: About -->
+      <div class="tab-content active" id="about">
+        <div style="max-width: 800px; margin-top: 2rem;">
+          <h2>About Dr. Martinez</h2>
+          <p style="font-size: 1.125rem; line-height: 1.7; margin: 1.5rem 0;">
+            I became a doctor because I wanted to make a real difference in people's lives. After completing my medical degree at Stanford
+            and my residency at UCLA, I've spent the past 15 years building relationships with patients and their families.
+          </p>
+          <p style="font-size: 1.125rem; line-height: 1.7; margin: 1.5rem 0;">
+            What I love most about family medicine is the continuity of care—getting to know patients over years, through wellness visits,
+            illnesses, major life changes, and everything in between. I believe healthcare should feel like a partnership, where we work
+            together to achieve your health goals.
+          </p>
+          <p style="font-size: 1.125rem; line-height: 1.7; margin: 1.5rem 0;">
+            My approach is simple: listen first, explain thoroughly, and create a treatment plan that fits your life. I never rush appointments
+            and always make time for questions. You deserve to feel heard and understood.
+          </p>
+          <p style="font-size: 1.125rem; line-height: 1.7; margin: 1.5rem 0;">
+            <strong>When I'm not in the clinic,</strong> you'll find me hiking with my two rescue dogs, practicing yoga, or experimenting
+            with new recipes in the kitchen. I'm also passionate about health education and regularly volunteer at community health fairs.
+          </p>
+        </div>
+      </div>
+
+      <!-- Tab Content: Education -->
+      <div class="tab-content" id="education">
+        <div style="max-width: 800px; margin-top: 2rem;">
+          <h2>Education & Training</h2>
+
+          <div style="margin: 2rem 0; padding: 1.5rem; background-color: var(--color-background-alt); border-radius: var(--radius-lg);">
+            <h3 style="color: var(--color-primary-dark); margin-bottom: 0.5rem;">Medical School</h3>
+            <p style="font-size: 1.125rem; font-weight: 600;">Stanford University School of Medicine</p>
+            <p style="color: var(--color-text-secondary);">Doctor of Medicine (MD), 2006-2010</p>
+            <p style="margin-top: 0.5rem;">Graduated with honors. Recipient of the Dean's Award for Clinical Excellence.</p>
+          </div>
+
+          <div style="margin: 2rem 0; padding: 1.5rem; background-color: var(--color-background-alt); border-radius: var(--radius-lg);">
+            <h3 style="color: var(--color-primary-dark); margin-bottom: 0.5rem;">Residency</h3>
+            <p style="font-size: 1.125rem; font-weight: 600;">UCLA Medical Center</p>
+            <p style="color: var(--color-text-secondary);">Family Medicine Residency, 2010-2013</p>
+            <p style="margin-top: 0.5rem;">Chief Resident in final year. Extensive training in women's health, pediatrics, and geriatrics.</p>
+          </div>
+
+          <div style="margin: 2rem 0; padding: 1.5rem; background-color: var(--color-background-alt); border-radius: var(--radius-lg);">
+            <h3 style="color: var(--color-primary-dark); margin-bottom: 0.5rem;">Board Certification</h3>
+            <p style="font-size: 1.125rem; font-weight: 600;">American Board of Family Medicine</p>
+            <p style="color: var(--color-text-secondary);">Certified 2013, Recertified 2023</p>
+          </div>
+
+          <div style="margin: 2rem 0;">
+            <h3 style="margin-bottom: 1rem;">Continuing Education</h3>
+            <ul style="list-style: none; padding: 0;">
+              <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--color-border);">
+                ✓ Advanced Diabetes Management Certificate (2023)
+              </li>
+              <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--color-border);">
+                ✓ Women's Health Leadership Program (2022)
+              </li>
+              <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--color-border);">
+                ✓ Lifestyle Medicine Certification (2021)
+              </li>
+              <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--color-border);">
+                ✓ Point-of-Care Ultrasound Training (2020)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content: Specialties -->
+      <div class="tab-content" id="specialties">
+        <div style="max-width: 800px; margin-top: 2rem;">
+          <h2>Areas of Expertise</h2>
+          <p style="font-size: 1.125rem; margin: 1.5rem 0;">
+            Dr. Martinez provides comprehensive family medicine with special focus in the following areas:
+          </p>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+            <div style="padding: 1.5rem; border: 2px solid var(--color-primary-light); border-radius: var(--radius-lg);">
+              <h3 style="color: var(--color-primary-dark); margin-bottom: 1rem;">Chronic Disease Management</h3>
+              <ul style="color: var(--color-text-secondary); line-height: 1.8;">
+                <li>Diabetes & pre-diabetes</li>
+                <li>Hypertension</li>
+                <li>High cholesterol</li>
+                <li>Asthma & COPD</li>
+                <li>Thyroid disorders</li>
+              </ul>
+            </div>
+
+            <div style="padding: 1.5rem; border: 2px solid var(--color-primary-light); border-radius: var(--radius-lg);">
+              <h3 style="color: var(--color-primary-dark); margin-bottom: 1rem;">Preventive Care</h3>
+              <ul style="color: var(--color-text-secondary); line-height: 1.8;">
+                <li>Annual wellness exams</li>
+                <li>Health screenings</li>
+                <li>Vaccination & immunizations</li>
+                <li>Lifestyle counseling</li>
+                <li>Weight management</li>
+              </ul>
+            </div>
+
+            <div style="padding: 1.5rem; border: 2px solid var(--color-primary-light); border-radius: var(--radius-lg);">
+              <h3 style="color: var(--color-primary-dark); margin-bottom: 1rem;">Women's Health</h3>
+              <ul style="color: var(--color-text-secondary); line-height: 1.8;">
+                <li>Well-woman exams</li>
+                <li>Prenatal care</li>
+                <li>Contraception counseling</li>
+                <li>Menopause management</li>
+                <li>PCOS & hormonal issues</li>
+              </ul>
+            </div>
+
+            <div style="padding: 1.5rem; border: 2px solid var(--color-primary-light); border-radius: var(--radius-lg);">
+              <h3 style="color: var(--color-primary-dark); margin-bottom: 1rem;">Acute Care</h3>
+              <ul style="color: var(--color-text-secondary); line-height: 1.8;">
+                <li>Urgent illness & infections</li>
+                <li>Minor injuries & wounds</li>
+                <li>Skin conditions</li>
+                <li>Respiratory infections</li>
+                <li>Digestive issues</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content: Reviews -->
+      <div class="tab-content" id="reviews">
+        <div style="max-width: 800px; margin-top: 2rem;">
+          <h2>Patient Reviews</h2>
+          <div style="display: flex; align-items: center; gap: 1rem; margin: 1.5rem 0; padding: 1.5rem; background-color: var(--color-primary-light); border-radius: var(--radius-lg);">
+            <div>
+              <div style="font-size: 3rem; font-weight: 700; color: var(--color-primary-dark);">4.9</div>
+              <div style="color: #FFC107; font-size: 1.5rem;">★★★★★</div>
+            </div>
+            <div>
+              <p style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.25rem;">Excellent</p>
+              <p style="color: var(--color-text-secondary);">Based on 187 verified patient reviews</p>
+            </div>
+          </div>
+
+          <div style="margin: 2rem 0; padding: 1.5rem; background-color: var(--color-background-alt); border-radius: var(--radius-lg);">
+            <div style="color: #FFC107; margin-bottom: 0.5rem;">★★★★★</div>
+            <p style="font-size: 1.125rem; font-style: italic; margin-bottom: 1rem;">
+              "Dr. Martinez is the best doctor I've ever had. She actually listens and doesn't rush you. I feel like she genuinely cares
+              about my well-being, not just checking boxes."
+            </p>
+            <p style="color: var(--color-text-secondary); font-size: 0.875rem;">— Sarah K., Patient since 2019</p>
+          </div>
+
+          <div style="margin: 2rem 0; padding: 1.5rem; background-color: var(--color-background-alt); border-radius: var(--radius-lg);">
+            <div style="color: #FFC107; margin-bottom: 0.5rem;">★★★★★</div>
+            <p style="font-size: 1.125rem; font-style: italic; margin-bottom: 1rem;">
+              "I was nervous about switching doctors, but Dr. Martinez made the transition seamless. She took time to review my entire
+              medical history and develop a personalized care plan. Highly recommend!"
+            </p>
+            <p style="color: var(--color-text-secondary); font-size: 0.875rem;">— Michael R., Patient since 2021</p>
+          </div>
+
+          <div style="margin: 2rem 0; padding: 1.5rem; background-color: var(--color-background-alt); border-radius: var(--radius-lg);">
+            <div style="color: #FFC107; margin-bottom: 0.5rem;">★★★★★</div>
+            <p style="font-size: 1.125rem; font-style: italic; margin-bottom: 1rem;">
+              "Dr. Martinez helped me finally get my diabetes under control. She explained everything in terms I could understand and
+              gave me practical tips that actually work. My A1C has never been better!"
+            </p>
+            <p style="color: var(--color-text-secondary); font-size: 0.875rem;">— Patricia L., Patient since 2018</p>
+          </div>
+
+          <div style="margin: 2rem 0; padding: 1.5rem; background-color: var(--color-background-alt); border-radius: var(--radius-lg);">
+            <div style="color: #FFC107; margin-bottom: 0.5rem;">★★★★★</div>
+            <p style="font-size: 1.125rem; font-style: italic; margin-bottom: 1rem;">
+              "Our whole family sees Dr. Martinez. She's great with our kids and knows our health history inside and out.
+              It's so comforting to have a doctor who truly knows us."
+            </p>
+            <p style="color: var(--color-text-secondary); font-size: 0.875rem;">— The Johnson Family, Patients since 2017</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom CTA -->
+      <div style="background-color: var(--color-primary-dark); color: white; padding: 3rem 2rem; border-radius: var(--radius-lg); text-align: center; margin: 4rem 0;">
+        <h2 style="color: white; margin-bottom: 1rem;">Ready to Schedule with Dr. Martinez?</h2>
+        <p style="font-size: 1.125rem; margin-bottom: 2rem; opacity: 0.9;">
+          New patients welcome. Most insurance accepted. Same-day appointments available.
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="#" class="btn btn--primary btn--large" data-modal="booking">Book Appointment</a>
+          <a href="tel:5551234567" class="btn btn--secondary btn--large" style="background-color: white; color: var(--color-primary-dark);">
+            Call (555) 123-4567
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+<?php get_footer(); ?>
