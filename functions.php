@@ -44,3 +44,36 @@ function clinic_features() {
     add_theme_support('post-thumbnails');
 }
 add_action('after_setup_theme', 'clinic_features');
+
+/**
+ * Automatic Template Routing
+ * Maps slugs to templates even if the page doesn't exist in the database.
+ */
+function clinic_template_routing($template) {
+    if (is_404()) {
+        $slug = trim($_SERVER['REQUEST_URI'], '/');
+        // Handle subdirectories if WP is not in root
+        $path_parts = explode('/', $slug);
+        $slug = end($path_parts);
+
+        // Remove query strings
+        $slug = explode('?', $slug)[0];
+
+        $templates = array(
+            'about'          => 'page-about.php',
+            'services'       => 'page-services.php',
+            'doctors'        => 'page-doctors.php',
+            'contact'        => 'page-contact.php',
+            'doctor-profile' => 'page-doctor-profile.php'
+        );
+
+        if (isset($templates[$slug])) {
+            $new_template = locate_template(array($templates[$slug]));
+            if (!empty($new_template)) {
+                return $new_template;
+            }
+        }
+    }
+    return $template;
+}
+add_filter('template_include', 'clinic_template_routing');
