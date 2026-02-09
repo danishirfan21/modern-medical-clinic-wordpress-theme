@@ -454,12 +454,18 @@ if ('IntersectionObserver' in window) {
 // ============================================
 
 function setActiveNavLink() {
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const currentPathname = window.location.pathname;
+  const currentHostname = window.location.hostname;
   
-  document.querySelectorAll('.nav__link').forEach(link => {
+  document.querySelectorAll('.nav__link:not(.nav__link--cta)').forEach(link => {
     const linkHref = link.getAttribute('href');
+    const linkUrl = new URL(linkHref, window.location.origin);
     
-    if (linkHref === currentPage) {
+    // Check if the link URL matches the current page
+    const isActive = linkUrl.hostname === currentHostname && 
+                     linkUrl.pathname === currentPathname;
+    
+    if (isActive) {
       link.classList.add('nav__link--active');
       link.setAttribute('aria-current', 'page');
     } else {
