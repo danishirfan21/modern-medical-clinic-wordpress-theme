@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Comprehensive healthcare services including primary care, pediatrics, women's health, and preventive wellness. Modern Medical Clinic.">
+  <title>Services - Modern Medical Clinic</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" role="banner">
+    <div class="header__container">
+      <a href="index.html" class="header__logo" aria-label="Modern Medical Clinic Home">
+        Modern Medical Clinic
+      </a>
+
+      <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="services.html" class="nav__link">Services</a></li>
+          <li><a href="doctors.html" class="nav__link">Our Doctors</a></li>
+          <li><a href="about.html" class="nav__link">About</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+          <li><a href="#" class="nav__link nav__link--cta" data-modal="booking">Book Appointment</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="hero" style="min-height: 40vh;">
+    <div class="hero__container">
+      <div class="hero__content">
+        <h1 class="hero__headline" style="font-size: 3rem;">Complete Healthcare Under One Roof</h1>
+        <p class="hero__subheadline">
+          From routine checkups to specialized care, our team is here for every stage of your health journey.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIMARY CARE SECTION -->
+  <section class="service-detail" id="primary-care">
+    <div class="container">
+
+      <div class="service-detail__grid fade-in">
+        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&h=600&fit=crop"
+             alt="Doctor consulting with patient"
+             class="service-detail__image">
+        <div class="service-detail__content">
+          <h2>Primary Care</h2>
+          <p>
+            Your first stop for all health concerns. Our primary care physicians provide comprehensive,
+            continuous care for adults of all ages.
+          </p>
+          
+          <!-- Early CTA -->
+          <a href="#" class="btn btn--secondary btn--small" data-modal="booking" style="margin: var(--space-md) 0;">Book Primary Care Visit</a>
+          
+          <h3>What We Offer:</h3>
+          
+          <!-- Icon Grid for Services -->
+          <div class="service-offerings-grid">
+            <div class="service-offering-card">
+              <div class="service-offering-icon">💓</div>
+              <p class="service-offering-text">Annual physical exams and wellness checkups</p>
+            </div>
+            <div class="service-offering-card">
+              <div class="service-offering-icon">🛡️</div>
+              <p class="service-offering-text">Chronic disease management (diabetes, hypertension, asthma)</p>
+            </div>
+            <div class="service-offering-card">
+              <div class="service-offering-icon">🩺</div>
+              <p class="service-offering-text">Acute illness treatment (cold, flu, infections)</p>
+            </div>
+            <div class="service-offering-card">
+              <div class="service-offering-icon">🔍</div>
+              <p class="service-offering-text">Health screenings and preventive care</p>
+            </div>
+            <div class="service-offering-card">
+              <div class="service-offering-icon">💊</div>
+              <p class="service-offering-text">Medication management and prescription refills</p>
+            </div>
+            <div class="service-offering-card">
+              <div class="service-offering-icon">⚕️</div>
+              <p class="service-offering-text">Minor procedures (sutures, biopsies)</p>
+            </div>
+          </div>
+          
+          <!-- Quick FAQs -->
+          <div class="service-quick-faqs">
+            <h4>Quick Primary Care Questions</h4>
+            <details class="faq-accordion">
+              <summary>Do you offer same-day sick visits?</summary>
+              <p>Yes! We reserve same-day appointment slots for urgent needs like flu, infections, and minor injuries. Call us before 2pm or book online to check availability.</p>
+            </details>
+            <details class="faq-accordion">
+              <summary>Can I schedule a telehealth appointment?</summary>
+              <p>Absolutely! Telehealth visits are available for follow-ups, minor illnesses, prescription refills, and many other concerns. Schedule through our online portal or call to book a video visit.</p>
+            </details>
+          </div>
+          
+          <!-- Main CTA with motivating text -->
+          <div class="service-cta-wrapper">
+            <p class="service-cta-text">Ready for comprehensive care?</p>
+            <a href="#" class="btn btn--primary btn--large" data-modal="booking">Book Primary Care Visit</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Meet Your Team Section -->
+      <div class="service-team-section fade-in">
+        <h3 class="service-team-title">Meet Your Primary Care Team</h3>
+        <div class="service-team-grid">
+          <div class="service-team-member">
+            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=200&h=200&fit=crop" alt="Dr. Sarah Johnson" class="service-team-photo">
+            <p class="service-team-name">Dr. Sarah Johnson, MD</p>
+            <p class="service-team-specialty">Family Medicine</p>
+          </div>
+          <div class="service-team-member">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=200&h=200&fit=crop" alt="Dr. Michael Chen" class="service-team-photo">
+            <p class="service-team-name">Dr. Michael Chen, MD</p>
+            <p class="service-team-specialty">Internal Medicine</p>
+          </div>
+          <div class="service-team-member">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=200&h=200&fit=crop" alt="Dr. James Wilson" class="service-team-photo">
+            <p class="service-team-name">Dr. James Wilson, MD</p>
+            <p class="service-team-specialty">Family Medicine</p>
+          </div>
+        </div>
+        <a href="doctors.html" class="btn btn--secondary">See All Doctors →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PEDIATRICS SECTION -->
+  <section class="service-detail section--alt" id="pediatrics">
+    <div class="container">
+
+      <div class="service-detail__grid fade-in">
+        <img src="https://images.unsplash.com/photo-1581594549595-35f6edc7b762?w=800&h=600&fit=crop"
+             alt="Pediatrician with child patient"
+             class="service-detail__image">
+        <div class="service-detail__content">
+          <h2>Pediatrics</h2>
+          <p>
+            From newborn care to teen health, we make kids feel comfortable and parents feel confident.
+            Our pediatricians are specially trained to care for children of all ages.
+          </p>
+          
+          <!-- Early CTA -->
+          <a href="#" class="btn btn--secondary btn--small" data-modal="booking" style="margin: var(--space-md) 0;">Book Pediatric Visit</a>
+          
+          <h3>What We Offer:</h3>
+          
+          <!-- Icon Grid for Services -->
+          <div class="service-offerings-grid">
+            <div class="service-offering-card">
+              <div class="service-offering-icon">👶</div>
+              <p class="service-offering-text">Well-child visits and developmental screenings</p>
+            </div>
+            <div class="service-offering-card">
+              <div class="service-offering-icon">💉</div>
+              <p class="service-offering-text">Immunizations and vaccine schedules</p>
+            </div>
+            <div class="service-offering-card">
+              <div class="service-offering-icon">🤒</div>
+              <p class="service-offering-text">Sick visits (ear infections, strep throat, rashes)</p>
+            </div>
+            <div class="service-offering-card">
+              <div class="service-offering-icon">⚽</div>
+              <p class="service-offering-text">Sports physicals and school forms</p>
+            </div>
+            <div class="service-offering-card">
+              <div class="service-offering-icon">🧠</div>
+              <p class="service-offering-text">Behavioral and learning assessments</p>
+            </div>
+            <div class="service-offering-card">
+              <div class="service-offering-icon">🌟</div>
+              <p class="service-offering-text">Adolescent health and confidential teen visits</p>
+            </div>
+          </div>
+          
+          <!-- Quick FAQs -->
+          <div class="service-quick-faqs">
+            <h4>Quick Pediatrics Questions</h4>
+            <details class="faq-accordion">
+              <summary>What vaccines do you provide for children?</summary>
+              <p>We offer all standard childhood vaccines including flu, COVID-19, HPV, Tdap, MMR, and more. Most vaccines are covered by insurance as preventive care.</p>
+            </details>
+            <details class="faq-accordion">
+              <summary>Do you offer same-day sick visits for kids?</summary>
+              <p>Yes! We reserve same-day appointment slots for urgent pediatric needs. Call us before 2pm or book online to check availability.</p>
+            </details>
+          </div>
+          
+          <!-- Main CTA with motivating text -->
+          <div class="service-cta-wrapper">
+            <p class="service-cta-text">Give your child the best start in health!</p>
+            <a href="#" class="btn btn--primary btn--large" data-modal="booking">Book Pediatric Visit</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Meet Your Team Section -->
+      <div class="service-team-section fade-in">
+        <h3 class="service-team-title">Meet Your Pediatrics Team</h3>
+        <div class="service-team-grid">
+          <div class="service-team-member">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=200&h=200&fit=crop" alt="Dr. Emily Park" class="service-team-photo">
+            <p class="service-team-name">Dr. Emily Park, MD</p>
+            <p class="service-team-specialty">Pediatrics</p>
+          </div>
+          <div class="service-team-member">
+            <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=200&h=200&fit=crop" alt="Dr. David Martinez" class="service-team-photo">
+            <p class="service-team-name">Dr. David Martinez, MD</p>
+            <p class="service-team-specialty">Pediatrics</p>
+          </div>
+          <div class="service-team-member">
+            <img src="https://images.unsplash.com/photo-1614608682850-e0d6ed316d47?w=200&h=200&fit=crop" alt="Dr. Lisa Thompson" class="service-team-photo">
+            <p class="service-team-name">Dr. Lisa Thompson, MD</p>
+            <p class="service-team-specialty">Pediatrics</p>
+          </div>
+        </div>
+        <a href="doctors.html" class="btn btn--secondary">See All Doctors →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WOMEN'S HEALTH SECTION -->
+  <section class="service-detail" id="womens-health">
+    <div class="container">
+
+      <div class="service-detail__grid fade-in">
+        <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=800&h=600&fit=crop"
+             alt="Women's health consultation"
+             class="service-detail__image">
+        <div class="service-detail__content">
+          <h2>Women's Health</h2>
+          <p>
+            Comprehensive care for women at every life stage, from adolescence through menopause and beyond.
+            Our physicians provide compassionate, personalized care.
+          </p>
+          
+          <!-- Early CTA -->
+          <a href="#" class="btn btn--secondary btn--small" data-modal="booking" style="margin: var(--space-md) 0;">Book Women's Health Visit</a>
+          
+          <h3>What We Offer:</h3>
+          
+          <!-- Icon Grid for Services -->
+          <div class="service-offerings-grid">
+            <div class="service-offering-card">
+              <div class="service-offering-icon">🩺</div>
+              <p class="service-offering-text">Annual well-woman exams and Pap smears</p>
+            </div>
+            <div class="service-offering-card">
+              <div class="service-offering-icon">🤰</div>
+              <p class="service-offering-text">Prenatal care and pregnancy support</p>
+            </div>
+            <div class="service-offering-card">
+              <div class="service-offering-icon">💊</div>
+              <p class="service-offering-text">Family planning and contraception counseling</p>
+            </div>
+            <div class="service-offering-card">
+              <div class="service-offering-icon">🌸</div>
+              <p class="service-offering-text">Menopause management and hormone therapy</p>
+            </div>
+            <div class="service-offering-card">
+              <div class="service-offering-icon">🎗️</div>
+              <p class="service-offering-text">Breast health and mammogram referrals</p>
+            </div>
+            <div class="service-offering-card">
+              <div class="service-offering-icon">💚</div>
+              <p class="service-offering-text">Treatment of common conditions (UTIs, yeast infections)</p>
+            </div>
+          </div>
+          
+          <!-- Quick FAQs -->
+          <div class="service-quick-faqs">
+            <h4>Quick Women's Health Questions</h4>
+            <details class="faq-accordion">
+              <summary>Do you offer prenatal care?</summary>
+              <p>Yes! We provide comprehensive prenatal care including regular checkups, ultrasounds, and support throughout your pregnancy journey.</p>
+            </details>
+            <details class="faq-accordion">
+              <summary>Can I schedule a telehealth appointment?</summary>
+              <p>Absolutely! Telehealth visits are available for follow-ups, contraception counseling, and many women's health concerns. Schedule through our online portal.</p>
+            </details>
+          </div>
+          
+          <!-- Main CTA with motivating text -->
+          <div class="service-cta-wrapper">
+            <p class="service-cta-text">Compassionate care at every stage of life.</p>
+            <a href="#" class="btn btn--primary btn--large" data-modal="booking">Book Women's Health Visit</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Meet Your Team Section -->
+      <div class="service-team-section fade-in">
+        <h3 class="service-team-title">Meet Your Women's Health Team</h3>
+        <div class="service-team-grid">
+          <div class="service-team-member">
+            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=200&h=200&fit=crop" alt="Dr. Rachel Anderson" class="service-team-photo">
+            <p class="service-team-name">Dr. Rachel Anderson, MD</p>
+            <p class="service-team-specialty">Obstetrics & Gynecology</p>
+          </div>
+          <div class="service-team-member">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=200&h=200&fit=crop" alt="Dr. Jennifer Lee" class="service-team-photo">
+            <p class="service-team-name">Dr. Jennifer Lee, MD</p>
+            <p class="service-team-specialty">Women's Health</p>
+          </div>
+          <div class="service-team-member">
+            <img src="https://images.unsplash.com/photo-1614608682850-e0d6ed316d47?w=200&h=200&fit=crop" alt="Dr. Maria Santos" class="service-team-photo">
+            <p class="service-team-name">Dr. Maria Santos, MD</p>
+            <p class="service-team-specialty">Women's Health</p>
+          </div>
+        </div>
+        <a href="doctors.html" class="btn btn--secondary">See All Doctors →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PREVENTIVE WELLNESS SECTION -->
+  <section class="service-detail section--alt" id="preventive">
+    <div class="container">
+
+      <div class="service-detail__grid fade-in">
+        <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=800&h=600&fit=crop"
+             alt="Health screening and wellness"
+             class="service-detail__image">
+        <div class="service-detail__content">
+          <h2>Preventive Wellness</h2>
+          <p>
+            The best medicine is prevention. Our wellness programs help you stay healthy,
+            catch problems early, and live your best life.
+          </p>
+          
+          <!-- Early CTA -->
+          <a href="#" class="btn btn--secondary btn--small" data-modal="booking" style="margin: var(--space-md) 0;">Book Wellness Visit</a>
+          
+          <h3>What We Offer:</h3>
+          
+          <!-- Icon Grid for Services -->
+          <div class="service-offerings-grid">
+            <div class="service-offering-card">
+              <div class="service-offering-icon">📋</div>
+              <p class="service-offering-text">Health risk assessments and screenings</p>
+            </div>
+            <div class="service-offering-card">
+              <div class="service-offering-icon">💉</div>
+              <p class="service-offering-text">Vaccinations (flu, shingles, pneumonia, travel vaccines)</p>
+            </div>
+            <div class="service-offering-card">
+              <div class="service-offering-icon">🥗</div>
+              <p class="service-offering-text">Lifestyle and nutrition counseling</p>
+            </div>
+            <div class="service-offering-card">
+              <div class="service-offering-icon">⚖️</div>
+              <p class="service-offering-text">Weight management programs</p>
+            </div>
+            <div class="service-offering-card">
+              <div class="service-offering-icon">🚭</div>
+              <p class="service-offering-text">Smoking cessation support</p>
+            </div>
+            <div class="service-offering-card">
+              <div class="service-offering-icon">🔬</div>
+              <p class="service-offering-text">Lab work and diagnostic testing</p>
+            </div>
+          </div>
+          
+          <!-- Quick FAQs -->
+          <div class="service-quick-faqs">
+            <h4>Quick Wellness Questions</h4>
+            <details class="faq-accordion">
+              <summary>What vaccines do you provide?</summary>
+              <p>We offer all standard vaccines including flu, COVID-19, shingles, pneumonia, HPV, Tdap, MMR, and travel vaccines. Most vaccines are covered by insurance as preventive care.</p>
+            </details>
+            <details class="faq-accordion">
+              <summary>Do you offer nutrition counseling?</summary>
+              <p>Yes! Our wellness programs include personalized nutrition counseling, weight management support, and lifestyle coaching to help you achieve your health goals.</p>
+            </details>
+          </div>
+          
+          <!-- Main CTA with motivating text -->
+          <div class="service-cta-wrapper">
+            <p class="service-cta-text">Start your journey to better health today!</p>
+            <a href="#" class="btn btn--primary btn--large" data-modal="booking">Book Wellness Visit</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Meet Your Team Section -->
+      <div class="service-team-section fade-in">
+        <h3 class="service-team-title">Meet Your Wellness Team</h3>
+        <div class="service-team-grid">
+          <div class="service-team-member">
+            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=200&h=200&fit=crop" alt="Dr. Sarah Johnson" class="service-team-photo">
+            <p class="service-team-name">Dr. Sarah Johnson, MD</p>
+            <p class="service-team-specialty">Preventive Medicine</p>
+          </div>
+          <div class="service-team-member">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=200&h=200&fit=crop" alt="Dr. Michael Chen" class="service-team-photo">
+            <p class="service-team-name">Dr. Michael Chen, MD</p>
+            <p class="service-team-specialty">Internal Medicine</p>
+          </div>
+          <div class="service-team-member">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=200&h=200&fit=crop" alt="Dr. James Wilson" class="service-team-photo">
+            <p class="service-team-name">Dr. James Wilson, MD</p>
+            <p class="service-team-specialty">Family Medicine</p>
+          </div>
+        </div>
+        <a href="doctors.html" class="btn btn--secondary">See All Doctors →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="section">
+    <div class="container container--narrow">
+      <h2 class="text-center" style="margin-bottom: 3rem;">Frequently Asked Questions</h2>
+
+      <div class="fade-in" style="margin-bottom: 2rem;">
+        <h3 style="color: var(--color-primary-dark); margin-bottom: 0.5rem;">What should I bring to my first appointment?</h3>
+        <p style="color: var(--color-text-secondary);">
+          Please bring a photo ID, insurance card, list of current medications, and any relevant medical records.
+          New patient forms can be filled out online in advance to save time.
+        </p>
+      </div>
+
+      <div class="fade-in" style="margin-bottom: 2rem;">
+        <h3 style="color: var(--color-primary-dark); margin-bottom: 0.5rem;">Do you offer same-day sick visits?</h3>
+        <p style="color: var(--color-text-secondary);">
+          Yes! We reserve same-day appointment slots for urgent needs like flu, infections, and minor injuries.
+          Call us before 2pm or book online to check availability.
+        </p>
+      </div>
+
+      <div class="fade-in" style="margin-bottom: 2rem;">
+        <h3 style="color: var(--color-primary-dark); margin-bottom: 0.5rem;">What vaccines do you provide?</h3>
+        <p style="color: var(--color-text-secondary);">
+          We offer all standard vaccines including flu, COVID-19, shingles, pneumonia, HPV, Tdap, MMR, and travel vaccines.
+          Most vaccines are covered by insurance as preventive care.
+        </p>
+      </div>
+
+      <div class="fade-in" style="margin-bottom: 2rem;">
+        <h3 style="color: var(--color-primary-dark); margin-bottom: 0.5rem;">Can I schedule a telehealth appointment?</h3>
+        <p style="color: var(--color-text-secondary);">
+          Absolutely! Telehealth visits are available for follow-ups, minor illnesses, prescription refills, and many other concerns.
+          Schedule through our online portal or call to book a video visit.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="section section--sage">
+    <div class="container text-center">
+      <h2 class="fade-in" style="margin-bottom: 1rem;">Ready to Get Started?</h2>
+      <p class="fade-in" style="font-size: 1.125rem; color: var(--color-text-secondary); margin-bottom: 2rem;">
+        Book your appointment today and experience healthcare that puts you first.
+      </p>
+      <a href="#" class="btn btn--primary btn--large fade-in" data-modal="booking">Book Appointment</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__container">
+        <div class="footer__column">
+          <div class="footer__logo">Modern Medical Clinic</div>
+          <p class="footer__tagline">Compassionate care, modern medicine</p>
+          <div class="social-links">
+            <a href="#" class="social-links__icon" aria-label="Facebook">f</a>
+            <a href="#" class="social-links__icon" aria-label="Instagram">📷</a>
+            <a href="#" class="social-links__icon" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+        <div class="footer__column">
+          <h3 class="footer__column-heading">Quick Links</h3>
+          <ul class="footer__list">
+            <li class="footer__list-item"><a href="index.html" class="footer__link">Home</a></li>
+            <li class="footer__list-item"><a href="services.html" class="footer__link">Services</a></li>
+            <li class="footer__list-item"><a href="doctors.html" class="footer__link">Our Doctors</a></li>
+            <li class="footer__list-item"><a href="about.html" class="footer__link">About Us</a></li>
+            <li class="footer__list-item"><a href="contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h3 class="footer__column-heading">Patient Resources</h3>
+          <ul class="footer__list">
+            <li class="footer__list-item"><a href="#" class="footer__link">Patient Portal</a></li>
+            <li class="footer__list-item"><a href="#" class="footer__link">Insurance Info</a></li>
+            <li class="footer__list-item"><a href="#" class="footer__link">FAQs</a></li>
+            <li class="footer__list-item"><a href="#" class="footer__link">New Patient Forms</a></li>
+            <li class="footer__list-item"><a href="#" class="footer__link">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h3 class="footer__column-heading">Contact</h3>
+          <div class="footer__contact-item">
+            <span>📍</span>
+            <span>123 Maple Street, Suite 200<br>Cityville, ST 12345</span>
+          </div>
+          <div class="footer__contact-item">
+            <span>📞</span>
+            <a href="tel:5551234567" class="footer__link">(555) 123-4567</a>
+          </div>
+          <div class="footer__contact-item">
+            <span>✉️</span>
+            <a href="mailto:hello@modernmedicalclinic.com" class="footer__link">hello@modernmedicalclinic.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="currentYear">2025</span> Modern Medical Clinic. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE CTA BAR -->
+  <div class="mobile-cta-bar" role="navigation" aria-label="Quick actions">
+    <a href="tel:5551234567" class="mobile-cta-bar__button">
+      <span class="mobile-cta-bar__icon">📞</span>
+      <span>Call Now</span>
+    </a>
+    <a href="#" class="mobile-cta-bar__button" data-modal="booking">
+      <span class="mobile-cta-bar__icon">📅</span>
+      <span>Book Online</span>
+    </a>
+  </div>
+
+  <!-- BOOKING MODAL -->
+  <div class="modal" id="bookingModal" role="dialog" aria-labelledby="modalTitle" aria-modal="true">
+    <div class="modal__content">
+      <div class="modal__header">
+        <h2 class="modal__title" id="modalTitle">Book Your Appointment</h2>
+        <button class="modal__close" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal__body">
+        <form id="bookingForm" class="form">
+          <div class="form__row">
+            <div class="form__group">
+              <label for="firstName" class="form__label">First Name *</label>
+              <input type="text" id="firstName" name="firstName" class="form__input" required>
+            </div>
+            <div class="form__group">
+              <label for="lastName" class="form__label">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" class="form__input" required>
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="email" class="form__label">Email *</label>
+            <input type="email" id="email" name="email" class="form__input" required>
+          </div>
+          <div class="form__group">
+            <label for="phone" class="form__label">Phone *</label>
+            <input type="tel" id="phone" name="phone" class="form__input" required>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="date" class="form__label">Preferred Date *</label>
+              <input type="date" id="date" name="date" class="form__input" required>
+            </div>
+            <div class="form__group">
+              <label for="time" class="form__label">Preferred Time *</label>
+              <select id="time" name="time" class="form__select" required>
+                <option value="">Select time</option>
+                <option value="morning">Morning (8am-12pm)</option>
+                <option value="afternoon">Afternoon (12pm-5pm)</option>
+                <option value="evening">Evening (5pm-7pm)</option>
+              </select>
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="reason" class="form__label">Reason for Visit *</label>
+            <select id="reason" name="reason" class="form__select" required>
+              <option value="">Select reason</option>
+              <option value="new-patient">New Patient Visit</option>
+              <option value="follow-up">Follow-up Visit</option>
+              <option value="urgent">Urgent Care</option>
+              <option value="preventive">Preventive/Wellness</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="notes" class="form__label">Additional Notes (Optional)</label>
+            <textarea id="notes" name="notes" class="form__textarea"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block btn--large">
+            Submit Appointment Request
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/mobile-cta.js"></script>
+
+</body>
+</html>
