@@ -5,7 +5,7 @@
 get_header(); ?>
 
   <!-- Hero with Team Photo -->
-  <section class="hero" style="min-height: 50vh; background-image: linear-gradient(135deg, rgba(0, 107, 125, 0.85), rgba(0, 107, 125, 0.7)), url('https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1600&q=80');">
+  <section class="hero">
     <div class="hero__container">
       <div class="hero__content" style="text-align: center; max-width: 800px; margin: 0 auto;">
         <h1 class="hero__headline" style="font-size: 3rem;">Healthcare That Puts You First</h1>
