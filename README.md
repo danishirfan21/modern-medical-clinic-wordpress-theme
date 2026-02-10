@@ -23,7 +23,6 @@ A custom, high-performance WordPress theme developed for a modern medical clinic
 - `assets/js/`: Modular scripts for carousel, mobile interaction, and main logic.
 - `functions.php`: Core theme functionality, asset management, and custom routing logic.
 - `*.php`: Standard WordPress template hierarchy (header, footer, front-page, page templates, etc.).
-- `pantheon-deploy.sh`: Deployment automation script for Pantheon environments.
 
 ## ⚙️ Setup & Installation
 
