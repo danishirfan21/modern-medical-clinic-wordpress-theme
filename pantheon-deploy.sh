@@ -5,10 +5,11 @@
 
 # Configuration - Update these if necessary
 PANTHEON_REPO_URL="ssh://codeserver.dev.a05f1923-3289-4741-bfdf-db18e9527f50@codeserver.dev.a05f1923-3289-4741-bfdf-db18e9527f50.drush.in:2222/~/repository.git"
+SITE_NAME="modern-medical-clinic"
 THEME_SLUG="modern-medical-clinic"
 TEMP_DIR=".pantheon_deploy_cache"
 
-echo "Starting deployment to Pantheon..."
+echo "Starting deployment to Pantheon Dev environment..."
 
 # Create temporary directory for the Pantheon repo clone
 mkdir -p "$TEMP_DIR"
@@ -26,7 +27,6 @@ fi
 mkdir -p "$TEMP_DIR/wp-content/themes/$THEME_SLUG"
 
 # Sync local theme files to the Pantheon repo
-# We sync the current directory (.) to the theme folder
 echo "Syncing theme files..."
 rsync -av --delete \
     --exclude ".git/" \
@@ -50,11 +50,27 @@ fi
 cd ..
 
 echo "--------------------------------------------------"
-echo "Deployment complete!"
-echo "Site URL: https://dev-modern-medical-clinic.pantheonsite.io/"
+echo "Dev Deployment complete!"
+echo "Dev Site: https://dev-$SITE_NAME.pantheonsite.io/"
+echo "--------------------------------------------------"
+
+# --- OPTIONAL: AUTOMATED DEPLOY TO TEST AND LIVE ---
+# To use this part, you need to install Terminus and authenticate with a Machine Token.
+# 1. Install Terminus: curl -L https://github.com/pantheon-systems/terminus/releases/latest/download/terminus.phar --output terminus && chmod +x terminus
+# 2. Authenticate: ./terminus auth:login --machine-token=YOUR_TOKEN
+
+# echo "Deploying from Dev to Test..."
+# ./terminus env:deploy $SITE_NAME.test --note="Deploying theme to Test"
+
+# echo "Deploying from Test to Live..."
+# ./terminus env:deploy $SITE_NAME.live --note="Deploying theme to Live"
+
+# echo "Live Site: https://live-$SITE_NAME.pantheonsite.io/"
+# --------------------------------------------------
+
 echo ""
 echo "Important Notes:"
 echo "1. If this is your first deploy, activate the theme in WordPress Admin."
-echo "2. If changes don't appear, clear your browser cache or click 'Clear Caches' in Pantheon."
-echo "3. The '$TEMP_DIR' directory is kept to speed up future deployments. You can safely delete it."
-echo "--------------------------------------------------"
+echo "2. Clear caches in Pantheon if changes don't appear."
+echo "3. To go LIVE: Use the Pantheon Dashboard (Test tab -> Deploy, then Live tab -> Deploy)"
+echo "   or use the Terminus commands commented out in this script."
