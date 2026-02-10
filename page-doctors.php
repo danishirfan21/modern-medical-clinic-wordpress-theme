@@ -4,7 +4,7 @@
  */
 get_header(); ?>
 
-  <section class="hero">
+  <section class="hero" style="min-height: 40vh;">
     <div class="hero__container">
       <div class="hero__content">
         <h1 class="hero__headline" style="font-size: 3rem;">Meet Our Team of Exceptional Doctors</h1>

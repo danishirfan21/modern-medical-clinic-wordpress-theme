@@ -8,8 +8,8 @@
 <body <?php body_class(); ?>>
   <header class="header" role="banner">
     <div class="header__container">
-      <a href="<?php echo esc_url(home_url('/')); ?>" class="header__logo" aria-label="Modern Medical Clinic Home">
-        Modern Medical Clinic
+      <a href="<?php echo esc_url(home_url('/')); ?>" class="header__logo" aria-label="<?php bloginfo('name'); ?> Home">
+        <?php bloginfo('name'); ?>
       </a>
 
       <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false">

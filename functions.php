@@ -70,16 +70,6 @@ function clinic_template_routing($template) {
         if (isset($templates[$slug])) {
             $new_template = locate_template(array($templates[$slug]));
             if (!empty($new_template)) {
-                // If we're routing to a known page template, clear the 404
-                // state so WordPress (and the browser tab title) treat this
-                // as a normal page. Also send a 200 status header.
-                status_header(200);
-                global $wp_query;
-                if ( isset( $wp_query ) ) {
-                    $wp_query->is_404 = false;
-                    $wp_query->is_page = true;
-                }
-
                 return $new_template;
             }
         }

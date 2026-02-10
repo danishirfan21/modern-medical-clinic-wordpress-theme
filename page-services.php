@@ -5,7 +5,7 @@
 get_header(); ?>
 
   <!-- PAGE HERO -->
-  <section class="hero">
+  <section class="hero" style="min-height: 40vh;">
     <div class="hero__container">
       <div class="hero__content">
         <h1 class="hero__headline" style="font-size: 3rem;">Complete Healthcare Under One Roof</h1>

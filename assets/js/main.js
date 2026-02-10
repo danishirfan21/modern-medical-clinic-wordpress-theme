@@ -120,9 +120,6 @@ class ModalManager {
     this.closeButton = document.querySelector('.modal__close');
     
     if (!this.modal) return;
-    // store original modal body so we can restore/reset it on close
-    const modalBodyEl = this.modal.querySelector('.modal__body');
-    this.originalBodyHTML = modalBodyEl ? modalBodyEl.innerHTML : null;
 
     this.init();
   }
@@ -214,33 +211,6 @@ class ModalManager {
       if (window.mobileCtaBarInstance) {
         window.mobileCtaBarInstance.handleScroll();
       }
-    }
-
-    // Reset modal body to original (clears any success message or remaining errors)
-    try {
-      const modalBody = this.modal.querySelector('.modal__body');
-      if (modalBody && this.originalBodyHTML !== null) {
-        modalBody.innerHTML = this.originalBodyHTML;
-
-        // If a form exists, reset it and clear any validation UI
-        const form = modalBody.querySelector('form');
-        if (form) {
-          form.reset();
-
-          // remove error classes/messages added by ImprovedFormValidation
-          const errorFields = form.querySelectorAll('.error');
-          errorFields.forEach(field => {
-            field.classList.remove('error');
-            field.style.borderColor = '';
-            field.removeAttribute('aria-invalid');
-            const err = field.parentElement.querySelector('.error-message');
-            if (err) err.remove();
-          });
-        }
-      }
-    } catch (err) {
-      // silently ignore DOM issues
-      console.warn('Could not reset modal body:', err);
     }
   }
 }
@@ -484,23 +454,32 @@ if ('IntersectionObserver' in window) {
 // ============================================
 
 function setActiveNavLink() {
-  const currentPathname = window.location.pathname;
-  const currentHostname = window.location.hostname;
+  const currentPath = window.location.pathname;
   
-  document.querySelectorAll('.nav__link:not(.nav__link--cta)').forEach(link => {
+  document.querySelectorAll('.nav__link').forEach(link => {
     const linkHref = link.getAttribute('href');
-    const linkUrl = new URL(linkHref, window.location.origin);
+    if (!linkHref || linkHref === '#') return;
     
-    // Check if the link URL matches the current page
-    const isActive = linkUrl.hostname === currentHostname && 
-                     linkUrl.pathname === currentPathname;
-    
-    if (isActive) {
-      link.classList.add('nav__link--active');
-      link.setAttribute('aria-current', 'page');
-    } else {
-      link.classList.remove('nav__link--active');
-      link.removeAttribute('aria-current');
+    // Check if the link's href is contained in the current path
+    // or if they match exactly
+    try {
+      const url = new URL(linkHref, window.location.origin);
+      if (url.pathname === currentPath || (currentPath === '/' && url.pathname === '/')) {
+        link.classList.add('nav__link--active');
+        link.setAttribute('aria-current', 'page');
+      } else {
+        link.classList.remove('nav__link--active');
+        link.removeAttribute('aria-current');
+      }
+    } catch (e) {
+      // Fallback for relative paths if URL constructor fails
+      if (currentPath.includes(linkHref) && linkHref !== '/') {
+        link.classList.add('nav__link--active');
+        link.setAttribute('aria-current', 'page');
+      } else {
+        link.classList.remove('nav__link--active');
+        link.removeAttribute('aria-current');
+      }
     }
   });
 }

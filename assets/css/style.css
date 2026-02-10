@@ -1838,7 +1838,7 @@ a:hover {
 
 .timeline-badge {
   position: absolute;
-  left: -7.75rem;
+  left: -6rem;
   top: 0;
   width: 4rem;
   height: 4rem;
@@ -2209,10 +2209,9 @@ a:hover {
 }
 
 .skip-link {
-  /* keep skip link available for keyboard users but hidden visually */
   position: absolute;
-  left: -9999px;
-  top: 0;
+  top: -40px;
+  left: 0;
   background: var(--color-primary-dark);
   color: white;
   padding: 8px 16px;
@@ -2220,17 +2219,13 @@ a:hover {
   z-index: 10000;
   border-radius: 0 0 4px 0;
   font-weight: 600;
-  transition: none;
+  transition: top var(--transition-fast);
 }
 
-.skip-link:focus,
-.skip-link:focus-visible {
-  /* reveal when focused via keyboard */
-  left: 0;
+.skip-link:focus {
   top: 0;
   outline: 3px solid var(--color-accent-coral);
   outline-offset: 2px;
-  transition: none;
 }
 
 *:focus-visible {

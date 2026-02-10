@@ -4,8 +4,8 @@
 
         <!-- Column 1: Branding -->
         <div class="footer__column">
-          <div class="footer__logo">Modern Medical Clinic</div>
-          <p class="footer__tagline">Compassionate care, modern medicine</p>
+          <div class="footer__logo"><?php bloginfo('name'); ?></div>
+          <p class="footer__tagline"><?php bloginfo('description'); ?></p>
           <div class="social-links">
             <a href="#" class="social-links__icon" aria-label="Facebook">f</a>
             <a href="#" class="social-links__icon" aria-label="Instagram">📷</a>
